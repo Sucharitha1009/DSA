@@ -31,6 +31,11 @@ class DoublyLinkedList:
     def display(self):
         temp=self.head
         print("Doubly Linked List:")
+        while temp:
+            print(temp.data,end="<-->")
+            temp=temp.next
+        print("None")
+        
         
 dll=DoublyLinkedList()
 n=int(input("enter no of elements to insert at end:"))
@@ -39,4 +44,5 @@ for i in range(n):
     dll.iae(val)
 dll.display()
 dll.backtraverse()
+    
     
